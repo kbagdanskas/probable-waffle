@@ -1,0 +1,120 @@
+body {
+  height: 100vh;
+  font-family: "Roboto";
+}
+
+main {
+  height: 100%;
+  background-color: #ececfc;
+}
+
+.dashboard-background main {
+  height: 100%;
+}
+
+.right-side-stat {
+  line-height: 0.2;
+}
+.right-side-stat p:first-of-type {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.statistics-section svg {
+  max-width: 15px;
+  max-height: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  fill: #286090;
+  padding: 15px;
+  background: linear-gradient(#fff, #f7f7f7);
+  border-radius: 50%;
+}
+.icons svg {
+  max-width: 15px;
+  max-height: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  fill: #286090;
+  padding: 15px;
+  background: linear-gradient(#fff, #f7f7f7);
+  border-radius: 50%;
+}
+
+.statistics-section ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(25% - 20px);
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.statistics-section ul {
+  display: flex;
+  padding: 0 20px 0;
+}
+
+.statistics-section {
+  padding: 1px 0 1px;
+  background-color: #ececfc;
+}
+
+.statistics-result-section {
+  padding: 10px 0 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 30px;
+}
+.statistics-result-section ul li {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: row;
+}
+
+.statistics-result-section input,
+label {
+  margin: 0 10px;
+}
+.statistics-result-section input {
+  margin: 0 3px;
+}
+
+.statistics-result-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.search-field input {
+  display: block;
+  margin-left: 15px;
+  width: 70%;
+  border-radius: 20px;
+  border: 1px solid rgb(212, 212, 212);
+  height: 35px;
+  padding: 0 10px;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+  font-size: 14px;
+}
+.search-field select {
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(212, 212, 212);
+  height: 35px;
+  padding: 0 10px;
+}
+table th {
+  text-align: left;
+  padding: 15px 15px;
+}
+table td {
+  padding: 5px 23px;
+  line-height: 1.6;
+}

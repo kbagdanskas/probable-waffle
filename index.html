@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-flex">
+        <section class="left-side-section">
+          <div class="google">
+            <a href="#">
+              <img src="/img/Google_2015_logo.svg" alt="google-logo" />
+            </a>
+          </div>
+          <div class="left-side-middle">
+            <h2>An Amazing Website</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reiciendis eos, beatae tempore quo doloremque temporibus quisquam
+              blanditiis, ratione praesentium maxime atque qui. Provident fuga
+              quos dolorum!
+            </p>
+          </div>
+          <div class="data-test">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM255.1 176C255.1 176 255.1 176 255.1 176c21.06 0 40.92 8.312 55.83 23.38c9.375 9.344 24.53 9.5 33.97 .1562c9.406-9.344 9.469-24.53 .1562-33.97c-24-24.22-55.95-37.56-89.95-37.56c0 0 .0313 0 0 0c-33.97 0-65.95 13.34-89.95 37.56c-49.44 49.88-49.44 131 0 180.9c24 24.22 55.98 37.56 89.95 37.56c.0313 0 0 0 0 0c34 0 65.95-13.34 89.95-37.56c9.312-9.438 9.25-24.62-.1562-33.97c-9.438-9.312-24.59-9.219-33.97 .1562c-14.91 15.06-34.77 23.38-55.83 23.38c0 0 .0313 0 0 0c-21.09 0-40.95-8.312-55.89-23.38c-30.94-31.22-30.94-82.03 0-113.3C214.2 184.3 234 176 255.1 176z"
+              />
+            </svg>
+            <p>2022 Data Test</p>
+          </div>
+          <a class="hidden-button" href="index.html">Start Now!</a>
+        </section>
+        <section class="first-survey same-style">
+          <form class="activities-form animation-detail" name="activities">
+            <p class="counter">1/5</p>
+            <h3>What do you usually do after work?</h3>
+            <div class="checkbox-style">
+              <input type="checkbox" name="video-games" id="video-games" />
+              <label for="video-games">Play video games</label>
+            </div>
+            <div class="checkbox-style">
+              <input type="checkbox" name="programming" id="programming" />
+              <label for="video-games">Programming</label>
+            </div>
+            <div class="checkbox-style">
+              <input type="checkbox" name="other-tasks" id="other-tasks" />
+              <label for="video-games">Other Tasks</label>
+            </div>
+
+            <div class="checkbox-style">
+              <input type="checkbox" name="family-time" id="family-time" />
+              <label for="video-games">Spending time with family</label>
+            </div>
+            <div class="checkbox-style">
+              <input type="checkbox" name="watching-tv" id="watching-tv" />
+              <label for="video-games">Watching TV</label>
+            </div>
+            <div class="checkbox-style">
+              <input type="checkbox" name="cleaning" id="cleaning" />
+              <label for="video-games">Cleaning</label>
+            </div>
+            <hr />
+            <div class="next">
+              <a
+                id="proceed-button"
+                class="button-blue"
+                onclick="save()"
+                type="submit"
+                >Next</a
+              >
+            </div>
+          </form>
+        </section>
+        <section class="second-survey same-style">
+          <form class="details animation-detail" name="details">
+            <p class="counter">2/5</p>
+            <h3>Please fill in your details</h3>
+            <div class="text-style">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="text-style">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="text-style">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="text-style-select">
+              <select required id="country" name="country">
+                <option selected disabled value="your-country">
+                  Your Country
+                </option>
+              </select>
+            </div>
+            <div class="terms">
+              <input required type="checkbox" name="terms" id="terms" />
+              <label for="terms"
+                >Please accept our <span>Terms and conditions</span></label
+              >
+            </div>
+            <hr />
+            <a class="button-blue" id="button-blue" href="#" type="submit"
+              >Next</a
+            >
+          </form>
+        </section>
+        <section class="confirmation-section same-style">
+          <form class="confirmation-form animation-detail">
+            <p class="counter">3/5</p>
+            <h3>Are these details correct?</h3>
+            <p>Please make sure these details are correct:</p>
+            <div class="confirmation-flex">
+              <p>Name</p>
+              <p id="name-storage"></p>
+            </div>
+            <div class="confirmation-flex">
+              <p>Surname</p>
+              <p id="surname-storage"></p>
+            </div>
+            <div class="confirmation-flex">
+              <p>Email</p>
+              <p id="email-storage"></p>
+            </div>
+            <div class="confirmation-flex">
+              <p>Country</p>
+              <p id="country-storage"></p>
+            </div>
+            <hr />
+            <div class="confirmation-buttons">
+              <a
+                class="reset-btn"
+                onclick="wis()"
+                href="index.html"
+                type="reset"
+                >Oops, no</a
+              >
+              <a
+                class="button-blue"
+                id="second-blue-button"
+                href="#"
+                type="submit"
+                >I can confirm these details are accurate</a
+              >
+            </div>
+          </form>
+        </section>
+        <section class="email-check-section same-style">
+          <form class="email-check animation-detail">
+            <p class="counter">4/5</p>
+            <h3>Please check your email</h3>
+            <h4>
+              We sent you an email with all of the required information to
+              complete the registration
+            </h4>
+            <div class="buttons-email">
+              <a onclick="wis()" class="go-back-btn" href="index.html"
+                >Fill again</a
+              >
+              <a class="dashboard-btn" href="dashboard.html">Dashboard</a>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
